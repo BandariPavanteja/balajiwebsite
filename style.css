@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.outbox{
+    border: solid 1px;
+    height: 160px;
+    display: flex;
+}
+#in1,#in2,#in3{
+    border: solid 1px;
+    height: 160px;
+}
+#in1{
+    width: 160px;
+}
+#in2{
+    width: 900px;
+    text-align: center;
+    background-color: beige;
+}
+#in3{
+    width: 300px;
+}
+#clgname{
+    font-size: 43px;
+    color: red;
+}
+#name1{
+    font-size: 22px;
+    color: navy;
+}
+#scrolltext{
+    font-size: 22px;
+    color: green;
+    font-weight: bold;
+}
+#navbox{
+    border: solid 1px;
+    height: 50px;
+}
+ul li{
+    border: solid 1px;
+    height: 50px;
+    width: 192px;
+    float: left;
+    background-color: rgb(249, 49, 49);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 15px;
+}
+ul{
+    list-style: none;  
+}
+ul li a{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+ul li:hover{
+    background-color: goldenrod;
+}
+.outerbox{
+    border: solid 1px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+#inbox1,#inbox2,#inbox3{
+    border: solid 1px;
+    height: 350px;
+    z-index: -1;
+}
+#inbox1{
+    width: 600px;
+    background-image: url(bits1.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 300px;
+    animation-name: imgchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes imgchange{
+    0%{
+        background-image: url(bits2.jpg);
+    }
+    10%{
+        background-image: url(bits3.jpg);
+    }
+    20%{
+        background-image: url(bits4.jpg);
+    }
+    30%{
+        background-image: url(bits5.jpg);
+    }
+    40%{
+        background-image: url(bits6.jpg);
+    }
+    50%{
+        background-image: url(bits7.jpg);
+    }
+}
+#inbox2,#inbox3{
+    width: 250px;
+    text-align: center;
+}
